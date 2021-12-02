@@ -1,0 +1,18 @@
+<h2>Chỉnh sửa sản phẩm</h2>
+<form *ngIf="productFormEdit" class="form" [formGroup]="productFormEdit" (ngSubmit)="submit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label>Price</label>
+    <input type="text" class="form-control" formControlName="price">
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input type="text" class="form-control" formControlName="description">
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-success">Edit</button>
+  </div>
+</form>
